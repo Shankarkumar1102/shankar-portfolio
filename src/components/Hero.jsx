@@ -1,5 +1,5 @@
 import "./Hero.css"
-import profileImg from "../assets/profile.png"
+import profileImg from "../assets/Profile.png"
 function Hero() {
   return (
     <section className="hero">
