@@ -31,8 +31,10 @@ function Hero() {
             Download CV
           </a>
 
-          {/* Contact Me */}
-          <a href="/hire-me" className="hero-hire-btn">
+          <a
+  href="/hire-me"
+  className="hero-hire-btn"
+>
   Hire Me
 </a>
 

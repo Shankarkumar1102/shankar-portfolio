@@ -7,7 +7,6 @@ import {
 } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
-
 import Hero from "./components/Hero"
 import Stats from "./components/Stats"
 import Footer from "./components/Footer"
@@ -32,6 +31,7 @@ function App() {
       {/* Loading Screen */}
       <Loader />
 
+
       {/* Navigation */}
       <Navbar />
 
@@ -39,7 +39,10 @@ function App() {
       {/* Pages */}
       <Routes>
 
-        {/* HOME */}
+        {/* =========================
+            HOME
+        ========================= */}
+
         <Route
           path="/"
           element={
@@ -54,7 +57,10 @@ function App() {
         />
 
 
-        {/* PROJECTS */}
+        {/* =========================
+            PROJECTS
+        ========================= */}
+
         <Route
           path="/projects"
           element={
@@ -65,7 +71,10 @@ function App() {
         />
 
 
-        {/* ABOUT */}
+        {/* =========================
+            ABOUT
+        ========================= */}
+
         <Route
           path="/about"
           element={
@@ -76,7 +85,10 @@ function App() {
         />
 
 
-        {/* SERVICES */}
+        {/* =========================
+            SERVICES
+        ========================= */}
+
         <Route
           path="/services"
           element={
@@ -87,7 +99,10 @@ function App() {
         />
 
 
-        {/* SKILLS */}
+        {/* =========================
+            SKILLS
+        ========================= */}
+
         <Route
           path="/skills"
           element={
@@ -98,7 +113,10 @@ function App() {
         />
 
 
-        {/* CONTACT */}
+        {/* =========================
+            CONTACT
+        ========================= */}
+
         <Route
           path="/contact"
           element={
@@ -109,18 +127,22 @@ function App() {
         />
 
 
-        {/* HIRE ME */}
+        {/* =========================
+            HIRE ME
+        ========================= */}
+
         <Route
           path="/hire-me"
           element={
-            <Reveal>
-              <HireMe />
-            </Reveal>
+            <HireMe />
           }
         />
 
 
-        {/* 404 PAGE */}
+        {/* =========================
+            404
+        ========================= */}
+
         <Route
           path="*"
           element={

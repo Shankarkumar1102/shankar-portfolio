@@ -302,4 +302,12 @@
     height: 410px;
   }
 
+}.hero-hire-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
