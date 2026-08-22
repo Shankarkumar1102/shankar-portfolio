@@ -24,8 +24,38 @@
   color: #6b7280;
 }
 
+/* Desktop*/
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .projects {
+    padding: 80px 5%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+}
+
+
+/* mobile */
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 65px 5% 80px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }

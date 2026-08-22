@@ -37,9 +37,7 @@ function Navbar() {
   Contact
 </NavLink>
 
-        <button className="navbar-btn">
-          Hire Me
-        </button>
+       
       </div>
 
       <button
