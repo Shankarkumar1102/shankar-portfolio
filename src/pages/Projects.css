@@ -1,0 +1,31 @@
+.projects {
+  padding: 100px 7%;
+  background: #f8fafc;
+}
+
+.projects-header {
+  max-width: 650px;
+  margin-bottom: 50px;
+}
+
+.projects-header p {
+  margin-bottom: 10px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.projects-header h2 {
+  margin-bottom: 16px;
+  font-size: clamp(36px, 5vw, 52px);
+  color: #111827;
+}
+
+.projects-header span {
+  color: #6b7280;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}

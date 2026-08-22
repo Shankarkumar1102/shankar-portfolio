@@ -1,0 +1,262 @@
+.about {
+  position: relative;
+  padding: 120px 7%;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 90px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 10% 50%,
+      rgba(37, 99, 235, 0.07),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+
+/* PHOTO */
+
+.about-image {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.12);
+  transform: rotate(-1deg);
+  transition: 0.5s ease;
+}
+
+.about-image:hover {
+  transform: rotate(0deg) translateY(-8px);
+  box-shadow:
+    0 35px 80px rgba(37, 99, 235, 0.14);
+}
+
+.about-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 60%,
+      rgba(15, 23, 42, 0.12)
+    );
+  pointer-events: none;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* CONTENT */
+
+.about-content {
+  max-width: 720px;
+}
+
+.about-content > p:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 7px 13px;
+  border-radius: 50px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.about-content > p:first-child::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+
+/* HEADING */
+
+.about-content h2 {
+  max-width: 700px;
+  margin-bottom: 24px;
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -2.2px;
+  color: #111827;
+}
+
+
+/* DESCRIPTION */
+
+.about-content > p:nth-child(3) {
+  max-width: 650px;
+  margin-bottom: 35px;
+  color: #6b7280;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* DETAILS */
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.about-details > div {
+  position: relative;
+  padding: 20px 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  background: rgba(248, 250, 252, 0.8);
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+
+  transition: all 0.35s ease;
+}
+
+.about-details > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #2563eb;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 0.35s ease;
+}
+
+.about-details > div:hover {
+  transform: translateY(-5px);
+  background: #ffffff;
+  border-color: #bfdbfe;
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.07);
+}
+
+.about-details > div:hover::before {
+  transform: scaleY(1);
+}
+
+.about-details span {
+  font-size: 12px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+
+.about-details strong {
+  font-size: 16px;
+  color: #111827;
+}
+
+
+/* RESUME BUTTON */
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  border-radius: 10px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.12);
+
+  transition: all 0.35s ease;
+}
+
+.resume-button:hover {
+  background: #2563eb;
+  transform: translateY(-4px);
+  box-shadow:
+    0 15px 30px rgba(37, 99, 235, 0.20);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .about {
+    padding: 90px 5%;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-image {
+    width: min(100%, 380px);
+    height: 460px;
+  }
+
+  .about-content {
+    max-width: 750px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .about {
+    padding: 75px 5%;
+    gap: 45px;
+  }
+
+  .about-image {
+    height: 410px;
+    border-radius: 24px;
+  }
+
+  .about-content h2 {
+    font-size: 40px;
+    letter-spacing: -1.3px;
+  }
+
+  .about-content > p:nth-child(3) {
+    font-size: 16px;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
