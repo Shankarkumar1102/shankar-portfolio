@@ -94,13 +94,23 @@
   align-items: center;
 
   gap: 14px;
+
+  flex-wrap: wrap;
 }
 
 
-/* ALL BUTTONS */
+/* HERO BUTTONS */
 
-.hero-buttons button {
+.hero-buttons a {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
   padding: 14px 23px;
+
+  min-height: 48px;
 
   border-radius: 9px;
 
@@ -108,20 +118,22 @@
 
   font-weight: 600;
 
+  text-decoration: none;
+
   transition: all 0.3s ease;
 }
 
 
-/* PRIMARY BUTTON */
+/* DOWNLOAD CV */
 
-.hero-buttons button:first-child {
+.hero-buttons a:first-child {
   background: #111827;
 
   color: #ffffff;
 }
 
 
-.hero-buttons button:first-child:hover {
+.hero-buttons a:first-child:hover {
   background: #2563eb;
 
   transform: translateY(-3px);
@@ -131,9 +143,9 @@
 }
 
 
-/* SECONDARY BUTTON */
+/* CONTACT ME */
 
-.hero-buttons button:last-child {
+.hero-buttons a:last-child {
   background: #ffffff;
 
   color: #111827;
@@ -142,7 +154,7 @@
 }
 
 
-.hero-buttons button:last-child:hover {
+.hero-buttons a:last-child:hover {
   border-color: #2563eb;
 
   color: #2563eb;
@@ -277,7 +289,7 @@
   }
 
 
-  .hero-buttons button {
+  .hero-buttons a {
     width: 100%;
   }
 

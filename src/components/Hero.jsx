@@ -1,10 +1,13 @@
-import "./Hero.css"
-import profileImg from "../assets/Profile.png"
+import "./Hero.css";
+
+import profileImg from "../assets/Profile.png";
+
 function Hero() {
   return (
     <section className="hero">
 
       <div className="hero-content">
+
         <span>Hello, I'm 👋</span>
 
         <h1>
@@ -19,20 +22,37 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button>Download CV</button>
-          <button>Contact Me</button>
+
+          {/* Download CV */}
+          <a
+            href="/Shankar-Kumar-Resume.pdf"
+            download="Shankar-Kumar-Resume.pdf"
+            className="hero-btn"
+          >
+            Download CV
+          </a>
+
+          {/* Contact Me */}
+          <a
+            href="/contact"
+            className="hero-btn contact-btn"
+          >
+            Contact Me
+          </a>
+
         </div>
+
       </div>
 
-     <div className="hero-image">
-  <img
-    src={profileImg}
-    alt="Shankar Kumar"
-  />
-</div>
+      <div className="hero-image">
+        <img
+          src={profileImg}
+          alt="Shankar Kumar"
+        />
+      </div>
 
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
