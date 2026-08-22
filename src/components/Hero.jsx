@@ -11,14 +11,13 @@ function Hero() {
         <span>Hello, I'm 👋</span>
 
         <h1>
-          Shankar
+          SHANKAR
           <br />
           <strong>Web Developer</strong>
         </h1>
 
         <p>
-          I build modern, responsive and user-friendly
-          websites and web applications.
+          I design and build modern digital experiences that combine thoughtful UI/UX design with clean, responsive, and high-performance frontend development.
         </p>
 
         <div className="hero-buttons">
@@ -33,12 +32,9 @@ function Hero() {
           </a>
 
           {/* Contact Me */}
-          <a
-            href="/contact"
-            className="hero-btn contact-btn"
-          >
-            Contact Me
-          </a>
+          <a href="/hire-me" className="hero-hire-btn">
+  Hire Me
+</a>
 
         </div>
 

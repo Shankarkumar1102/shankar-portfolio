@@ -7,6 +7,7 @@ import {
 } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
+
 import Hero from "./components/Hero"
 import Stats from "./components/Stats"
 import Footer from "./components/Footer"
@@ -18,11 +19,14 @@ import About from "./pages/About"
 import Services from "./pages/Services"
 import Skills from "./pages/Skills"
 import Contact from "./pages/Contact"
+import HireMe from "./pages/HireMe"
 import NotFound from "./pages/NotFound"
 
 
 function App() {
+
   return (
+
     <BrowserRouter>
 
       {/* Loading Screen */}
@@ -100,6 +104,17 @@ function App() {
           element={
             <Reveal>
               <Contact />
+            </Reveal>
+          }
+        />
+
+
+        {/* HIRE ME */}
+        <Route
+          path="/hire-me"
+          element={
+            <Reveal>
+              <HireMe />
             </Reveal>
           }
         />
