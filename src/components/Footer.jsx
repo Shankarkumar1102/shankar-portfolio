@@ -1,4 +1,5 @@
 import "./Footer.css"
+
 import { Link } from "react-router-dom"
 
 function Footer() {
@@ -7,7 +8,9 @@ function Footer() {
 
       <div className="footer-main">
 
+        {/* BRAND */}
         <div className="footer-brand">
+
           <Link to="/" className="footer-logo">
             Shankar.
           </Link>
@@ -17,9 +20,11 @@ function Footer() {
             creating clean and meaningful digital
             experiences.
           </p>
+
         </div>
 
 
+        {/* NAVIGATION */}
         <div className="footer-navigation">
 
           <h4>Navigation</h4>
@@ -33,39 +38,41 @@ function Footer() {
         </div>
 
 
+        {/* SOCIAL */}
         <div className="footer-social">
 
           <h4>Connect</h4>
 
-          <a
-            href="YOUR_GITHUB_LINK"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub ↗
-          </a>
+  <a
+    href="https://github.com/Shankarkumar1102"
+    target="_blank"
+    rel="noreferrer"
+  >
+    GitHub ↗
+  </a>
 
-          <a
-            href="YOUR_LINKEDIN_LINK"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn ↗
-          </a>
+  <a
+    href="https://www.linkedin.com/in/shankarkumaruiux/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    LinkedIn ↗
+  </a>
 
-          <a
-            href="YOUR_BEHANCE_LINK"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Behance ↗
-          </a>
+  <a
+    href="https://www.behance.net/shankarkumar294"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Behance ↗
+  </a>
 
         </div>
 
       </div>
 
 
+      {/* BOTTOM */}
       <div className="footer-bottom">
 
         <p>
