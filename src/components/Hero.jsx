@@ -22,22 +22,6 @@ function Hero() {
 
         <div className="hero-buttons">
 
-          {/* Download CV */}
-          <a
-            href="/Shankar-Kumar-Resume.pdf"
-            download="Shankar-Kumar-Resume.pdf"
-            className="hero-btn"
-          >
-            Download CV
-          </a>
-
-          <a
-  href="/hire-me"
-  className="hero-hire-btn"
->
-  Hire Me
-</a>
-
         </div>
 
       </div>

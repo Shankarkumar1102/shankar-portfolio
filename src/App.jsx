@@ -18,7 +18,6 @@ import About from "./pages/About"
 import Services from "./pages/Services"
 import Skills from "./pages/Skills"
 import Contact from "./pages/Contact"
-import HireMe from "./pages/HireMe"
 import NotFound from "./pages/NotFound"
 
 
@@ -73,11 +72,7 @@ function App() {
 
         <Route
           path="/about"
-          element={
-            <Reveal>
-              <About />
-            </Reveal>
-          }
+          element={<About />}
         />
 
 
@@ -124,16 +119,6 @@ function App() {
 
 
         {/* =========================
-            HIRE ME
-        ========================= */}
-
-        <Route
-          path="/hire-me"
-          element={<HireMe />}
-        />
-
-
-        {/* =========================
             404
         ========================= */}
 
@@ -147,6 +132,7 @@ function App() {
         />
 
       </Routes>
+
 
       {/* Footer */}
       <Footer />
