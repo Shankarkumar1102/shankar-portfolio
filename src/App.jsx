@@ -23,18 +23,14 @@ import NotFound from "./pages/NotFound"
 
 
 function App() {
-
   return (
-
     <BrowserRouter>
 
       {/* Loading Screen */}
       <Loader />
 
-
       {/* Navigation */}
       <Navbar />
-
 
       {/* Pages */}
       <Routes>
@@ -133,9 +129,7 @@ function App() {
 
         <Route
           path="/hire-me"
-          element={
-            <HireMe />
-          }
+          element={<HireMe />}
         />
 
 
@@ -153,7 +147,6 @@ function App() {
         />
 
       </Routes>
-
 
       {/* Footer */}
       <Footer />
