@@ -2,6 +2,7 @@ import { useForm, ValidationError } from "@formspree/react"
 import "./Contact.css"
 
 function Contact() {
+
   const [state, handleSubmit] = useForm("mqpznwwy")
 
   if (state.succeeded) {
@@ -10,7 +11,9 @@ function Contact() {
         <div className="contact-content">
           <p>Thank You!</p>
 
-          <h2>Message sent successfully.</h2>
+          <h2>
+            Message sent successfully.
+          </h2>
 
           <p>
             Thanks for reaching out. I'll get back to you soon.
@@ -24,24 +27,28 @@ function Contact() {
     <section className="contact">
 
       <div className="contact-content">
+
         <p>Get In Touch</p>
 
-        <h2>Let's work together</h2>
+        <h2>
+          Let's work together
+        </h2>
 
         <p>
           Have a project or opportunity in mind?
           Feel free to get in touch.
         </p>
 
-        <a href="mailto:YOUR_EMAIL@gmail.com">
-          shankarkumar.bca@outlook.com
+        <a href="mailto:shnkarkumar.bca@outlook.com">
+          shnkarkumar.bca@outlook.com
         </a>
 
         <br />
 
-        <a href="tel:+91XXXXXXXXXX">
+        <a href="tel:+916239901052">
           +91 6239901052
         </a>
+
       </div>
 
 
