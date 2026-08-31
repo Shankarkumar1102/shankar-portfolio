@@ -4,7 +4,7 @@ import SkillCard from "../components/SkillCard"
 const skills = [
   {
     name: "Figma / UI UX",
-    level: 85,
+    level: 90,
     description: "UI design, prototyping and design systems.",
   },
 
@@ -22,13 +22,13 @@ const skills = [
 
   {
     name: "JavaScript",
-    level: 40,
+    level: 50,
     description: "Currently building strong JavaScript fundamentals.",
   },
 
   {
     name: "React",
-    level: 25,
+    level: 60,
     description: "Currently learning React development.",
   },
 ]
