@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard"
 import project1 from "../assets/Project1.png"
 import project2 from "../assets/Project2.png"
 import project3 from "../assets/Project3.png"
-import project4 from "../assets/Project4.png"
+import project4 from "../assets/project4.png"
 
 const projects = [
   {
@@ -72,8 +72,8 @@ function Projects() {
         </h2>
 
         <span>
-          A selection of projects showcasing my skills in development,
-          design, and modern web technologies.
+          A selection of projects showcasing my skills in development, design,
+          and modern web technologies.
         </span>
       </div>
 
