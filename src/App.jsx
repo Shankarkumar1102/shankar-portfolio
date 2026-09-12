@@ -7,7 +7,6 @@ import {
 } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
-
 import Hero from "./components/Hero"
 import Stats from "./components/Stats"
 import Footer from "./components/Footer"
@@ -23,29 +22,21 @@ import Contact from "./pages/Contact"
 import SpiceHeaven from "./pages/SpiceHeaven"
 import FoodAppUI from "./pages/FoodAppUI"
 import PortfolioProject from "./pages/PortfolioProject"
+import ShankarBookStore from "./pages/ShankarBookStore"
 
 
 function Home() {
   return (
     <>
-      {/* Loading Screen */}
       <Loader />
 
-      {/* Navigation */}
       <Navbar />
 
-      {/* =========================
-          HOME
-      ========================= */}
-
       <main>
+
         <section id="home">
           <Hero />
         </section>
-
-        {/* =========================
-            STATS
-        ========================= */}
 
         <section id="stats">
           <Reveal>
@@ -53,19 +44,11 @@ function Home() {
           </Reveal>
         </section>
 
-        {/* =========================
-            ABOUT
-        ========================= */}
-
         <section id="about">
           <Reveal>
             <About />
           </Reveal>
         </section>
-
-        {/* =========================
-            SERVICES
-        ========================= */}
 
         <section id="services">
           <Reveal>
@@ -73,19 +56,11 @@ function Home() {
           </Reveal>
         </section>
 
-        {/* =========================
-            PROJECTS
-        ========================= */}
-
         <section id="projects">
           <Reveal>
             <Projects />
           </Reveal>
         </section>
-
-        {/* =========================
-            SKILLS
-        ========================= */}
 
         <section id="skills">
           <Reveal>
@@ -93,18 +68,14 @@ function Home() {
           </Reveal>
         </section>
 
-        {/* =========================
-            CONTACT
-        ========================= */}
-
         <section id="contact">
           <Reveal>
             <Contact />
           </Reveal>
         </section>
+
       </main>
 
-      {/* Footer */}
       <Footer />
     </>
   )
@@ -114,12 +85,16 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
+
       <Routes>
 
-        {/* Main Portfolio */}
-        <Route path="/" element={<Home />} />
+        {/* HOME */}
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
-        {/* Project Detail Pages */}
+        {/* PROJECT DETAILS */}
         <Route
           path="/projects/spice-heaven"
           element={<SpiceHeaven />}
@@ -135,7 +110,13 @@ function App() {
           element={<PortfolioProject />}
         />
 
+        <Route
+          path="/projects/shankar-book-store"
+          element={<ShankarBookStore />}
+        />
+
       </Routes>
+
     </BrowserRouter>
   )
 }

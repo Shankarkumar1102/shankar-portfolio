@@ -10,10 +10,14 @@
   margin: 0 auto;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .project-details-hero {
   padding: 90px 7% 75px;
+
   background:
     radial-gradient(
       circle at 85% 20%,
@@ -26,12 +30,17 @@
 .project-back-button {
   margin-bottom: 55px;
   padding: 0;
+
   border: none;
   background: transparent;
+
   color: #6b7280;
+
   font-size: 14px;
   font-weight: 600;
+
   cursor: pointer;
+
   transition: color 0.3s ease;
 }
 
@@ -42,34 +51,52 @@
 .project-category,
 .section-label {
   margin-bottom: 14px;
+
   color: #2563eb;
+
   font-size: 12px;
   font-weight: 700;
+
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
 
 .project-details-hero h1 {
   margin: 0 0 20px;
+
   font-size: clamp(55px, 9vw, 100px);
+
   line-height: 0.95;
   letter-spacing: -4px;
 }
 
+.project-details-hero h1 span {
+  color: #2563eb;
+}
+
 .project-intro {
   max-width: 700px;
+
   margin: 0 0 32px;
+
   color: #6b7280;
+
   font-size: 17px;
   line-height: 1.8;
 }
 
-/* BUTTONS */
+
+/* =========================
+   BUTTONS
+========================= */
 
 .project-actions {
   display: flex;
+
   align-items: center;
+
   gap: 10px;
+
   flex-wrap: wrap;
 }
 
@@ -77,13 +104,19 @@
 .project-secondary-button,
 .project-source-button {
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
+
   padding: 11px 17px;
+
   border-radius: 9px;
+
   font-size: 13px;
   font-weight: 600;
+
   text-decoration: none;
+
   transition: all 0.3s ease;
 }
 
@@ -94,22 +127,30 @@
 
 .project-primary-button:hover {
   background: #1d4ed8;
+
   transform: translateY(-2px);
 }
 
 .project-secondary-button {
   border: 1px solid #e5e7eb;
+
   background: #ffffff;
+
   color: #111827;
 }
 
 .project-secondary-button:hover {
   border-color: #2563eb;
+
   color: #2563eb;
+
   transform: translateY(-2px);
 }
 
-/* PREVIEW */
+
+/* =========================
+   HOME SCREEN
+========================= */
 
 .project-preview-section {
   padding: 0 7% 90px;
@@ -117,39 +158,71 @@
 
 .project-preview {
   max-width: 1200px;
-  height: 500px;
+
+  min-height: 500px;
+
   margin: 0 auto;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
   overflow: hidden;
+
   border: 1px solid #e5e7eb;
+
   border-radius: 22px;
+
   background: #ffffff;
-  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.08);
 }
 
 .project-preview img {
   width: 100%;
-  height: 100%;
+  height: auto;
+
+  max-height: 700px;
+
   display: block;
-  object-fit: cover;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  border-radius: 12px;
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT
+========================= */
 
 .project-about-section {
   padding: 100px 7%;
+
   background: #ffffff;
 }
 
 .project-about-grid {
   display: grid;
+
   grid-template-columns: 42% 58%;
+
   gap: 70px;
 }
 
 .project-about-grid h2 {
   margin: 0;
+
   font-size: clamp(38px, 5vw, 58px);
+
   line-height: 1.05;
+
   letter-spacing: -2px;
 }
 
@@ -160,99 +233,306 @@
 
 .project-about-text p {
   margin: 0 0 20px;
+
   color: #6b7280;
+
   font-size: 15px;
+
   line-height: 1.9;
 }
 
-/* TECHNOLOGIES */
+
+/* =========================
+   WEBSITE SCREENS
+========================= */
+
+.project-screens-section {
+  padding: 110px 7%;
+
+  background: #f8fafc;
+}
+
+.project-screens-header {
+  max-width: 700px;
+
+  margin-bottom: 70px;
+}
+
+.project-screens-header h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(42px, 6vw, 68px);
+
+  line-height: 1;
+
+  letter-spacing: -3px;
+}
+
+.project-screens-header h2 span {
+  color: #2563eb;
+}
+
+.project-screens-header > p:last-child {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   SCREEN BLOCK
+========================= */
+
+.project-screen-block {
+  margin-bottom: 100px;
+}
+
+.project-screen-block:last-child {
+  margin-bottom: 0;
+}
+
+.project-screen-info {
+  display: grid;
+
+  grid-template-columns: 60px 1fr;
+
+  gap: 25px;
+
+  align-items: start;
+
+  margin-bottom: 25px;
+}
+
+.project-screen-info > span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.project-screen-info h3 {
+  margin: 0 0 8px;
+
+  color: #111827;
+
+  font-size: 25px;
+
+  letter-spacing: -0.5px;
+}
+
+.project-screen-info p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SCREEN IMAGE
+========================= */
+
+.project-screen-image {
+  width: 100%;
+
+  min-height: 500px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding: 18px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.07);
+}
+
+.project-screen-image img {
+  width: 100%;
+
+  height: auto;
+
+  max-height: 750px;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  border-radius: 12px;
+}
+
+
+/* =========================
+   TECHNOLOGIES
+========================= */
 
 .project-tech-section {
   padding: 90px 7%;
+
   background: #f8fafc;
 }
 
 .project-tech-section h2 {
   margin: 0 0 30px;
+
   font-size: clamp(40px, 5vw, 58px);
+
   letter-spacing: -2px;
+}
+
+.project-tech-section h2 span {
+  color: #2563eb;
 }
 
 .project-tech-list {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 10px;
 }
 
 .project-tech-list span {
   padding: 9px 16px;
+
   border: 1px solid #dbeafe;
+
   border-radius: 50px;
+
   background: #eff6ff;
+
   color: #2563eb;
+
   font-size: 13px;
+
   font-weight: 600;
 }
 
-/* FEATURES */
+
+/* =========================
+   FEATURES
+========================= */
 
 .project-features-section {
   padding: 100px 7%;
+
   background: #ffffff;
 }
 
-.project-features-section > .project-details-container > h2 {
+.project-features-section
+  > .project-details-container
+  > h2 {
   max-width: 700px;
+
   margin: 0 0 45px;
+
   font-size: clamp(40px, 5vw, 58px);
+
   line-height: 1.05;
+
   letter-spacing: -2px;
 }
 
 .project-features-grid {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 20px;
 }
 
 .project-feature {
   padding: 28px;
+
   border: 1px solid #e5e7eb;
+
   border-radius: 18px;
+
   background: #ffffff;
+
   transition: all 0.3s ease;
 }
 
 .project-feature:hover {
   transform: translateY(-5px);
+
   border-color: #dbeafe;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.07);
+
+  box-shadow:
+    0 20px 40px rgba(15, 23, 42, 0.07);
 }
 
 .project-feature span {
   display: block;
+
   margin-bottom: 30px;
+
   color: #2563eb;
+
   font-size: 11px;
+
   font-weight: 700;
 }
 
 .project-feature h3 {
   margin: 0 0 10px;
+
   font-size: 20px;
 }
 
 .project-feature p {
   margin: 0;
+
   color: #6b7280;
+
   font-size: 13px;
+
   line-height: 1.7;
 }
 
-/* SOURCE */
+
+/* =========================
+   SOURCE
+========================= */
 
 .project-source-section {
   padding: 100px 7%;
+
   background: #f8fafc;
 }
 
@@ -262,8 +542,11 @@
 
 .project-source h2 {
   margin: 0 0 30px;
+
   font-size: clamp(42px, 6vw, 70px);
+
   line-height: 1;
+
   letter-spacing: -3px;
 }
 
@@ -273,17 +556,23 @@
 
 .project-source-button {
   background: #111827;
+
   color: #ffffff;
 }
 
 .project-source-button:hover {
   background: #2563eb;
+
   transform: translateY(-2px);
 }
 
-/* TABLET */
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 900px) {
+
   .project-details-hero {
     padding: 80px 5% 65px;
   }
@@ -293,7 +582,9 @@
   }
 
   .project-preview {
-    height: 400px;
+    min-height: 400px;
+
+    padding: 14px;
   }
 
   .project-about-section {
@@ -302,7 +593,20 @@
 
   .project-about-grid {
     grid-template-columns: 1fr;
+
     gap: 40px;
+  }
+
+  .project-screens-section {
+    padding: 90px 5%;
+  }
+
+  .project-screen-block {
+    margin-bottom: 75px;
+  }
+
+  .project-screen-image {
+    min-height: 400px;
   }
 
   .project-tech-section {
@@ -322,9 +626,13 @@
   }
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 600px) {
+
   .project-details-hero {
     padding: 65px 5% 55px;
   }
@@ -335,16 +643,19 @@
 
   .project-details-hero h1 {
     font-size: 54px;
+
     letter-spacing: -2.5px;
   }
 
   .project-intro {
     font-size: 15px;
+
     line-height: 1.7;
   }
 
   .project-actions {
     flex-direction: column;
+
     align-items: stretch;
   }
 
@@ -353,14 +664,35 @@
     width: 100%;
   }
 
+
+  /* HOME SCREEN */
+
   .project-preview-section {
     padding: 0 5% 60px;
   }
 
   .project-preview {
-    height: 260px;
+    min-height: auto;
+
+    padding: 8px;
+
     border-radius: 18px;
   }
+
+  .project-preview img {
+    width: 100%;
+
+    height: auto;
+
+    max-height: none;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+  }
+
+
+  /* ABOUT */
 
   .project-about-section {
     padding: 65px 5%;
@@ -374,9 +706,78 @@
     font-size: 14px;
   }
 
+
+  /* WEBSITE SCREENS */
+
+  .project-screens-section {
+    padding: 65px 5%;
+  }
+
+  .project-screens-header {
+    margin-bottom: 50px;
+  }
+
+  .project-screens-header h2 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+  .project-screen-block {
+    margin-bottom: 60px;
+  }
+
+  .project-screen-info {
+    grid-template-columns: 42px 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+  }
+
+  .project-screen-info > span {
+    width: 36px;
+
+    height: 36px;
+  }
+
+  .project-screen-info h3 {
+    font-size: 21px;
+  }
+
+  .project-screen-info p {
+    font-size: 13px;
+  }
+
+  .project-screen-image {
+    min-height: auto;
+
+    padding: 8px;
+
+    border-radius: 16px;
+  }
+
+  .project-screen-image img {
+    width: 100%;
+
+    height: auto;
+
+    max-height: none;
+
+    object-fit: contain;
+
+    border-radius: 9px;
+  }
+
+
+  /* TECHNOLOGIES */
+
   .project-tech-section {
     padding: 65px 5%;
   }
+
+
+  /* FEATURES */
 
   .project-features-section {
     padding: 65px 5%;
@@ -386,6 +787,9 @@
     padding: 24px;
   }
 
+
+  /* SOURCE */
+
   .project-source-section {
     padding: 70px 5%;
   }
@@ -393,4 +797,5 @@
   .project-source h2 {
     letter-spacing: -2px;
   }
+
 }
