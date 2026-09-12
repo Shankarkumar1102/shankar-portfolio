@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard"
 import project1 from "../assets/Project1.png"
 import project2 from "../assets/Project2.png"
 import project3 from "../assets/Project3.png"
-import project4 from "../assets/project4.png"
+import project4 from "../assets/Project4.png"
 
 const projects = [
   {
