@@ -1,7 +1,17 @@
+/* =========================
+   SERVICES SECTION
+========================= */
+
 .services {
+
   position: relative;
+
   padding: 120px 7%;
+
   overflow: hidden;
+
+  /* ORIGINAL BACKGROUND
+     SAME RAKHA HAI */
 
   background:
     radial-gradient(
@@ -13,58 +23,161 @@
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .services-header {
+
   max-width: 800px;
+
   margin-bottom: 60px;
 }
 
+
 .services-header > p:first-child {
+
   display: inline-flex;
 
   margin-bottom: 16px;
+
   padding: 7px 13px;
 
   border-radius: 50px;
 
   background: #eff6ff;
+
   color: #2563eb;
 
   font-size: 13px;
+
   font-weight: 700;
 }
 
+
+/* =========================
+   HEADING
+========================= */
+
 .services-header h2 {
+
   margin-bottom: 20px;
 
   font-size: clamp(40px, 5vw, 60px);
+
   line-height: 1.05;
+
   letter-spacing: -2px;
 
   color: #111827;
 }
 
+
 .services-header h2 span {
+
   color: #2563eb;
 }
 
+
+/* =========================
+   DESCRIPTION
+========================= */
+
 .services-description {
+
   max-width: 600px;
 
   color: #6b7280;
 
   font-size: 17px;
+
   line-height: 1.8;
 }
 
 
-/* GRID */
+/* =========================
+   SERVICES GRID
+========================= */
 
 .services-grid {
+
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  /* ONE CARD PER ROW */
+
+  grid-template-columns: 1fr;
 
   gap: 22px;
+
+  width: 100%;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .services {
+
+    padding: 90px 5%;
+  }
+
+
+  .services-header {
+
+    margin-bottom: 45px;
+  }
+
+
+  .services-grid {
+
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .services {
+
+    padding: 75px 5%;
+  }
+
+
+  .services-header {
+
+    margin-bottom: 40px;
+  }
+
+
+  .services-header h2 {
+
+    font-size: 40px;
+
+    letter-spacing: -1.2px;
+  }
+
+
+  .services-description {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+
+  .services-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
 }

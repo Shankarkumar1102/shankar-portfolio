@@ -3,7 +3,6 @@ import "./ProjectCard.css"
 function ProjectCard({ project }) {
   return (
     <article className="project-card">
-
       <div className="project-image-wrapper">
         <img
           className="project-card-image"
@@ -13,7 +12,6 @@ function ProjectCard({ project }) {
       </div>
 
       <div className="project-card-content">
-
         <p className="project-card-category">
           {project.category}
         </p>
@@ -33,27 +31,25 @@ function ProjectCard({ project }) {
         </div>
 
         <div className="project-links">
-
           <a
             href={project.link}
             target="_blank"
             rel="noreferrer"
           >
-            Live Demo ↗
+            View Source Code ↗
           </a>
 
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub ↗
-          </a>
-
+          {project.title !== "Food App UI" && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          )}
         </div>
-
       </div>
-
     </article>
   )
 }

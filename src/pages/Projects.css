@@ -24,14 +24,22 @@
   color: #6b7280;
 }
 
-/* Desktop*/
+/* Projects Layout */
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
 }
 
+/* Desktop */
+
+@media (min-width: 901px) {
+  .projects-grid {
+    gap: 32px;
+  }
+}
 
 /* Tablet */
 
@@ -41,13 +49,11 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
+    gap: 24px;
   }
 }
 
-
-/* mobile */
+/* Mobile */
 
 @media (max-width: 600px) {
   .projects {
@@ -55,7 +61,6 @@
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 22px;
   }
 }

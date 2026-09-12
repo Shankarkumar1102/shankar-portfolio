@@ -3,7 +3,20 @@ import "./Hero.css";
 import profileImg from "../assets/Profile.png";
 
 function Hero() {
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
+
     <section className="hero">
 
       <div className="hero-content">
@@ -22,15 +35,31 @@ function Hero() {
 
         <div className="hero-buttons">
 
+          <button
+            type="button"
+            onClick={() => scrollToSection("projects")}
+          >
+            View Projects
+          </button>
+
+          <button
+            type="button"
+            onClick={() => scrollToSection("contact")}
+          >
+            Contact Me
+          </button>
+
         </div>
 
       </div>
 
       <div className="hero-image">
+
         <img
           src={profileImg}
           alt="Shankar Kumar"
         />
+
       </div>
 
     </section>

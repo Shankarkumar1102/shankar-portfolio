@@ -106,3 +106,30 @@
     grid-column: auto;
   }
 }
+/* =========================
+   ONE PAGE SMOOTH SCROLL
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sticky navbar ke neeche section heading hide na ho */
+section {
+  scroll-margin-top: 90px;
+}
+
+
+/* =========================
+   SECTION IDS
+========================= */
+
+#home,
+#stats,
+#about,
+#services,
+#projects,
+#skills,
+#contact {
+  width: 100%;
+}

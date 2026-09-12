@@ -1,45 +1,77 @@
 import { useState } from "react"
-import { Link, NavLink } from "react-router-dom"
 import "./Navbar.css"
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id)
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+
+    setMenuOpen(false)
+  }
+
   return (
     <nav className="navbar">
 
-      <Link to="/" className="navbar-logo">
+      {/* Logo */}
+      <button
+        className="navbar-logo"
+        onClick={() => scrollToSection("home")}
+      >
         SHANKAR.
-      </Link>
+      </button>
 
+
+      {/* Navigation Links */}
       <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
-        <NavLink to="/" onClick={() => setMenuOpen(false)}>
-  Home
-</NavLink>
 
-<NavLink to="/about" onClick={() => setMenuOpen(false)}>
-  About
-</NavLink>
+        <button
+          onClick={() => scrollToSection("home")}
+        >
+          Home
+        </button>
 
-<NavLink to="/services" onClick={() => setMenuOpen(false)}>
-  Services
-</NavLink>
+        <button
+          onClick={() => scrollToSection("about")}
+        >
+          About
+        </button>
 
-<NavLink to="/projects" onClick={() => setMenuOpen(false)}>
-  Projects
-</NavLink>
+        <button
+          onClick={() => scrollToSection("services")}
+        >
+          Services
+        </button>
 
-<NavLink to="/skills" onClick={() => setMenuOpen(false)}>
-  Skills
-</NavLink>
+        <button
+          onClick={() => scrollToSection("projects")}
+        >
+          Projects
+        </button>
 
-<NavLink to="/contact" onClick={() => setMenuOpen(false)}>
-  Contact
-</NavLink>
+        <button
+          onClick={() => scrollToSection("skills")}
+        >
+          Skills
+        </button>
 
-       
+        <button
+          onClick={() => scrollToSection("contact")}
+        >
+          Contact
+        </button>
+
       </div>
 
+
+      {/* Mobile Menu Button */}
       <button
         className="menu-button"
         onClick={() => setMenuOpen(!menuOpen)}

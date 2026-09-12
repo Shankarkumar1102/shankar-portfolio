@@ -17,13 +17,25 @@
 }
 
 
-/* LOGO */
+/* =========================
+   LOGO
+========================= */
 
 .navbar-logo {
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
   font-size: 25px;
   font-weight: 800;
   letter-spacing: -0.8px;
+
   color: #111827;
+
+  cursor: pointer;
 
   transition: 0.3s ease;
 }
@@ -33,7 +45,9 @@
 }
 
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION
+========================= */
 
 .navbar-links {
   display: flex;
@@ -42,38 +56,57 @@
 }
 
 
-/* NAV LINKS */
+/* =========================
+   NAV LINKS
+========================= */
 
-.navbar-links a {
+.navbar-links button {
   position: relative;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-family: inherit;
 
   font-size: 15px;
   font-weight: 500;
 
   color: #4b5563;
 
+  cursor: pointer;
+
   transition: color 0.3s ease;
 }
 
 
-/* HOVER */
+/* =========================
+   HOVER
+========================= */
 
-.navbar-links a:hover {
+.navbar-links button:hover {
   color: #111827;
 }
 
 
-/* ACTIVE LINK */
+/* =========================
+   ACTIVE / SELECTED
+========================= */
 
-.navbar-links a.active {
+.navbar-links button.active {
   color: #2563eb;
   font-weight: 600;
 }
 
 
-/* ACTIVE UNDERLINE */
+/* =========================
+   ACTIVE UNDERLINE
+========================= */
 
-.navbar-links a.active::after {
+.navbar-links button.active::after {
   content: "";
 
   position: absolute;
@@ -90,24 +123,33 @@
 }
 
 
-/* HIRE ME BUTTON */
+/* =========================
+   HIRE ME BUTTON
+========================= */
 
 .navbar-btn {
   padding: 11px 20px;
 
+  border: none;
   border-radius: 9px;
 
   background: #111827;
   color: #ffffff;
 
+  font-family: inherit;
+
   font-size: 14px;
   font-weight: 600;
+
+  cursor: pointer;
 
   transition: all 0.3s ease;
 }
 
 
-/* BUTTON HOVER */
+/* =========================
+   HIRE ME HOVER
+========================= */
 
 .navbar-btn:hover {
   background: #2563eb;
@@ -118,12 +160,17 @@
 }
 
 
-/* MOBILE MENU BUTTON */
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
 
 .menu-button {
   display: none;
 
   padding: 6px;
+
+  border: none;
+  outline: none;
 
   background: transparent;
 
@@ -136,7 +183,9 @@
 }
 
 
-/* TABLET */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 900px) {
 
@@ -151,7 +200,9 @@
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 600px) {
 
@@ -205,10 +256,12 @@
 
   /* MOBILE LINKS */
 
-  .navbar-links a {
+  .navbar-links button {
     width: 100%;
 
     padding: 8px 0;
+
+    text-align: left;
 
     font-size: 16px;
   }
@@ -216,14 +269,14 @@
 
   /* REMOVE UNDERLINE ON MOBILE */
 
-  .navbar-links a.active::after {
+  .navbar-links button.active::after {
     display: none;
   }
 
 
   /* MOBILE ACTIVE */
 
-  .navbar-links a.active {
+  .navbar-links button.active {
     color: #2563eb;
   }
 
@@ -241,7 +294,9 @@
 }
 
 
-/* MOBILE MENU ANIMATION */
+/* =========================
+   MOBILE MENU ANIMATION
+========================= */
 
 @keyframes mobileMenu {
 

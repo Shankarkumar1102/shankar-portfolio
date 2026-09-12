@@ -1,10 +1,12 @@
 .stats {
-  padding: 35px 7% 90px;
+  padding: 35px 7% 35px;
   background: #ffffff;
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .stats-header {
   margin-bottom: 30px;
@@ -22,16 +24,16 @@
   color: #6b7280;
 
   font-size: 12px;
-
   font-weight: 700;
 
   text-transform: uppercase;
-
   letter-spacing: 0.8px;
 }
 
 
-/* GRID */
+/* =========================
+   GRID
+========================= */
 
 .stats-grid {
   display: grid;
@@ -41,12 +43,13 @@
   padding: 28px 0;
 
   border-top: 1px solid #e5e7eb;
-
   border-bottom: 1px solid #e5e7eb;
 }
 
 
-/* STAT */
+/* =========================
+   STAT
+========================= */
 
 .stat {
   position: relative;
@@ -56,20 +59,19 @@
   padding: 5px 30px;
 
   display: flex;
-
   flex-direction: column;
-
   justify-content: center;
 }
 
 
-/* NUMBER */
+/* =========================
+   NUMBER
+========================= */
 
 .stat-number {
   margin-bottom: 5px;
 
   font-size: 28px;
-
   font-weight: 800;
 
   letter-spacing: -0.8px;
@@ -78,7 +80,9 @@
 }
 
 
-/* LABEL */
+/* =========================
+   LABEL
+========================= */
 
 .stat-label {
   color: #6b7280;
@@ -87,17 +91,17 @@
 }
 
 
-/* SEPARATOR */
+/* =========================
+   SEPARATOR
+========================= */
 
 .stat-line {
   position: absolute;
 
   right: 0;
-
   top: 50%;
 
   width: 1px;
-
   height: 45px;
 
   transform: translateY(-50%);
@@ -106,7 +110,9 @@
 }
 
 
-/* HOVER */
+/* =========================
+   HOVER
+========================= */
 
 .stat {
   transition: 0.3s ease;
@@ -117,12 +123,14 @@
 }
 
 
-/* TABLET */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 900px) {
 
   .stats {
-    padding: 30px 5% 70px;
+    padding: 30px 5% 35px;
   }
 
   .stats-grid {
@@ -138,12 +146,14 @@
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 600px) {
 
   .stats {
-    padding: 25px 5% 60px;
+    padding: 25px 5% 30px;
   }
 
   .stats-grid {

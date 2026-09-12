@@ -7,6 +7,7 @@ import {
 } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
+
 import Hero from "./components/Hero"
 import Stats from "./components/Stats"
 import Footer from "./components/Footer"
@@ -18,125 +19,123 @@ import About from "./pages/About"
 import Services from "./pages/Services"
 import Skills from "./pages/Skills"
 import Contact from "./pages/Contact"
-import NotFound from "./pages/NotFound"
+
+import SpiceHeaven from "./pages/SpiceHeaven"
+import FoodAppUI from "./pages/FoodAppUI"
+import PortfolioProject from "./pages/PortfolioProject"
 
 
-function App() {
+function Home() {
   return (
-    <BrowserRouter>
-
+    <>
       {/* Loading Screen */}
       <Loader />
 
       {/* Navigation */}
       <Navbar />
 
-      {/* Pages */}
-      <Routes>
+      {/* =========================
+          HOME
+      ========================= */}
+
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
 
         {/* =========================
-            HOME
+            STATS
         ========================= */}
 
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-
-              <Reveal>
-                <Stats />
-              </Reveal>
-            </>
-          }
-        />
-
-
-        {/* =========================
-            PROJECTS
-        ========================= */}
-
-        <Route
-          path="/projects"
-          element={
-            <Reveal>
-              <Projects />
-            </Reveal>
-          }
-        />
-
+        <section id="stats">
+          <Reveal>
+            <Stats />
+          </Reveal>
+        </section>
 
         {/* =========================
             ABOUT
         ========================= */}
 
-        <Route
-          path="/about"
-          element={<About />}
-        />
-
+        <section id="about">
+          <Reveal>
+            <About />
+          </Reveal>
+        </section>
 
         {/* =========================
             SERVICES
         ========================= */}
 
-        <Route
-          path="/services"
-          element={
-            <Reveal>
-              <Services />
-            </Reveal>
-          }
-        />
+        <section id="services">
+          <Reveal>
+            <Services />
+          </Reveal>
+        </section>
 
+        {/* =========================
+            PROJECTS
+        ========================= */}
+
+        <section id="projects">
+          <Reveal>
+            <Projects />
+          </Reveal>
+        </section>
 
         {/* =========================
             SKILLS
         ========================= */}
 
-        <Route
-          path="/skills"
-          element={
-            <Reveal>
-              <Skills />
-            </Reveal>
-          }
-        />
-
+        <section id="skills">
+          <Reveal>
+            <Skills />
+          </Reveal>
+        </section>
 
         {/* =========================
             CONTACT
         ========================= */}
 
-        <Route
-          path="/contact"
-          element={
-            <Reveal>
-              <Contact />
-            </Reveal>
-          }
-        />
-
-
-        {/* =========================
-            404
-        ========================= */}
-
-        <Route
-          path="*"
-          element={
-            <Reveal>
-              <NotFound />
-            </Reveal>
-          }
-        />
-
-      </Routes>
-
+        <section id="contact">
+          <Reveal>
+            <Contact />
+          </Reveal>
+        </section>
+      </main>
 
       {/* Footer */}
       <Footer />
+    </>
+  )
+}
 
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+
+        {/* Main Portfolio */}
+        <Route path="/" element={<Home />} />
+
+        {/* Project Detail Pages */}
+        <Route
+          path="/projects/spice-heaven"
+          element={<SpiceHeaven />}
+        />
+
+        <Route
+          path="/projects/food-app-ui"
+          element={<FoodAppUI />}
+        />
+
+        <Route
+          path="/projects/portfolio"
+          element={<PortfolioProject />}
+        />
+
+      </Routes>
     </BrowserRouter>
   )
 }
